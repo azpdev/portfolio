@@ -1,0 +1,62 @@
+@media print {
+  @page {
+    margin: 0 !important;
+  }
+
+  /* General */
+
+  body {
+    padding: 38px !important;
+  }
+
+  header {
+    display: none !important;
+  }
+
+  footer {
+    display: none !important;
+  }
+
+  p {
+    font-size: 11pt !important;
+  }
+
+  h1 {
+    font-size: 20pt !important;
+  }
+
+  h2 {
+    font-size: 16pt !important;
+  }
+
+  h3 {
+    font-size: 14pt !important;
+  }
+
+  h4 {
+    font-size: 12pt !important;
+  }
+
+  h5 {
+    font-size: 10pt !important;
+  }
+
+  li {
+    font-size: 11pt !important;
+  }
+
+  /* Extra */
+
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .print-me {
+    display: none !important;
+  }
+}
