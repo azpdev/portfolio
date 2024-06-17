@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box;
   color: var(--color-text);
-  font-family: "Roboto", sans-serif;
+  font-family: "MesloLGS NF", monospace, "Roboto", sans-serif;
   font-size: 100%;
 }
 
@@ -56,6 +56,15 @@ h4 {
 h5 {
   font-size: 90%;
   font-weight: 400;
+}
+
+ul {
+  font-size: 100%;
+  padding-left: 18px;
+}
+
+li {
+  font-size: 100%;
 }
 
 main {
