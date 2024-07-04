@@ -5,207 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/arm-bright-small.jpeg" />
+
     <!-- Fonts -->
     <link
       rel="stylesheet"
       href="https://www.uncon.net/MesloLGSNF-web-fonts/stylesheet.css" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="css/print.css" media="print" />
-
-    <!-- Scripts -->
 
     <!-- Site Meta -->
     <title>Alex Z. Palomin - Software Development Resume</title>
     <meta
       name="description"
       content="A software development portfolio to showcase my software projects and work experience." />
+
+    <!-- Scripts and Styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
   </head>
   <body>
-    <header class="header">
-      <h2 class="header-title"><a href="/">Alex Palomin</a></h2>
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="/">Resume</a>
-          </li>
-          <!-- <li class="navbar-item">
-            <a href="/about-me">About Me</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/projects">Projects</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/employment">Past Employment</a>
-          </li> -->
-          <!-- <li class="navbar-item">
-            <a href="#">Blog</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#">Consulting</a>
-          </li> -->
-        </ul>
-      </nav>
-    </header>
+    <div class="header">
+      <header>
+        <h2 class="header-title">
+          <a href="/">
+            <span class="header-title-text">Alex Z. Palomin</span>
+            <span class="header-title-text-sm">AZP</span>
+          </a>
+        </h2>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/resume">Resume</a>
+            </li>
+            <!-- <li class="navbar-item">
+              <a href="/experience">Experience</a>
+            </li> -->
+            <!-- <li class="navbar-item">
+              <a href="/about-me">About Me</a>
+            </li> -->
+            <!-- <li class="navbar-item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#">Consulting</a>
+            </li> -->
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <main>
-      <div class="card">
-        <div class="resume-header">
-          <div class="top-header">
-            <h1 class="resume-title"></h1>
-            <div class="contact-list">
-              <ul>
-                <li>
-                  <img
-                    src="assets/icons/icons8-location-24.png"
-                    alt="location icon" />
-                  West Jordan, Utah
-                </li>
-                <li>
-                  <a href="mailto:alex@azpdev.com">
-                    <img
-                      src="assets/icons/icons8-email-24.png"
-                      alt="email icon" />
-                    alex@azpdev.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="contact-list">
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/azpdev"
-                  ><img
-                    src="assets/icons/icons8-linkedin-24.png"
-                    alt="linkedin icon" />
-                  in/azpdev
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/azpdev">
-                  <img
-                    src="assets/icons/icons8-github-24.png"
-                    alt="github icon" />
-                  github/azpdev
-                </a>
-              </li>
-              <li>
-                <a href="https://azpdev.com">
-                  <img src="assets/icons/icons8-web-24.png" alt="web icon" />
-                  azpdev.com
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <section>
-          <h2 class="sub-heading">Summary</h2>
-          <p class="section-content">
-            Dynamic Software Developer with a heavy focus on front-end
-            development and deployment. With experience leading teams of
-            developers and interfacing with clients to deliver high-quality
-            software. Has learned multiple front-end frameworks and is working
-            towards more full stack experience. Consistently learning new things
-            to improve skills and provide more value.
-          </p>
-        </section>
-        <section>
-          <h2 class="sub-heading">Skills</h2>
-          <div class="skill-lists">
-            <ul class="section-content">
-              <li>Mentoring</li>
-              <li>Leadership</li>
-              <li>Deployment</li>
-            </ul>
-            <ul class="section-content">
-              <li>Front-end</li>
-              <li>IOS/Android</li>
-              <li>Web</li>
-            </ul>
-            <ul class="section-content">
-              <li>Dart</li>
-              <li>JS/TS</li>
-              <li>HTML/CSS</li>
-            </ul>
-            <ul class="section-content">
-              <li>Flutter</li>
-              <li>Angular</li>
-              <li>Ionic</li>
-            </ul>
-          </div>
-        </section>
-        <section>
-          <h2 class="sub-heading">Experience</h2>
-          <div class="exp-header">
-            <h3 class="exp-title">Lead Software Developer</h3>
-            <h5 class="exp-sub-title">Sept 2023 - Present</h5>
-          </div>
-          <h4 class="exp-sub-heading">Stutor Inc, Utah</h4>
-          <ul class="section-content">
-            <li>Flutter, Dart, Firebase, Bloc, RiverPod, IOS, Android, Web</li>
-            <li>Managed a front-end team of developers</li>
-            <li>Handled deployments and other front-end infrastructure</li>
-            <li>
-              Led the acrhitecture shift from Twilio to Agora.io for video calls
-            </li>
-            <li>Implemented Twilio messaging in Swift and Kotlin</li>
-            <li>
-              Interfaced with founders and backend team to deliver features
-            </li>
-          </ul>
-          <div class="exp-header">
-            <h3 class="exp-title">Software Developer</h3>
-            <h5 class="exp-sub-title">Oct 2021 - Sept 2023</h5>
-          </div>
-          <h4 class="exp-sub-heading">Jerran Software Solutions, Utah</h4>
-          <ul class="section-content">
-            <li>Angular, Ionic, IOS, Android, Web</li>
-            <li>Led a major redesign of the app</li>
-            <li>Worked with clients to deliver features</li>
-            <li>
-              Improved app data downloads, built repair functionality, and more
-              visibility
-            </li>
-            <li>Helped interns/junior developers</li>
-            <li>
-              Declined ownership of the business and took a job with a client
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2 class="sub-heading">Education</h2>
-          <div class="exp-header">
-            <h3 class="exp-title">Associates Degree</h3>
-            <h5 class="exp-sub-title">2019 - 2022</h5>
-          </div>
-          <h4 class="exp-sub-heading">Utah Valley University</h4>
-          <ul class="section-content">
-            <li>Major: Computer Science, Overall GPA: 3.7</li>
-            <li>Certificate of Completion: Programmer</li>
-            <li>General education from Salt Lake Community College</li>
-            <li>
-              Software Development, Java, JS, HTML, CSS, C/C++, Python,
-              Algorithms, Data Structures, Networking, Os Theory, Computer
-              Architecture
-            </li>
-          </ul>
-        </section>
-        <!-- <section>
-          <h2 class="sub-heading">Certifications</h2>
-        </section> -->
-
-        <!-- <section>
-          <h2>Projects</h2>
-        </section> -->
-      </div>
-      <div class="print-me">
-        <button onclick="window.print()">Print Me</button>
-      </div>
+      <section class="background"></section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section class="site-info">
+        <h5>Made in plain JS, HTML, and CSS by Alex Z. Palomin</h5>
+        <h5>
+          If you want a similar site either steal it and buy me a coffee or
+          contact
+          <a href="mailto:sales@azpdev.com" class="email-link">
+            sales@azpdev.com
+          </a>
+        </h5>
+        <h5 class="copy-right">© 2024 Alex Z. Palomin</h5>
+      </section>
+    </footer>
   </body>
 </html>

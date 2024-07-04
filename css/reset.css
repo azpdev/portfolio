@@ -7,17 +7,28 @@
   color: var(--color-text);
   font-family: "MesloLGS NF", monospace, "Roboto", sans-serif;
   font-size: 100%;
+  line-height: 1.2;
 }
 
-body,
-html {
+/* html {
   background-color: var(--color-background);
-}
+} */
 
 body,
 html {
   margin: 0;
   padding: 0;
+}
+
+.background {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url(../assets/images/lg-keyboard.JPG);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  min-height: 1000px;
+  width: 100%;
 }
 
 a {
@@ -68,28 +79,35 @@ li {
 }
 
 main {
-  max-width: var(--default-max-width);
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 /* End Starter Global Styles */
 
 /* Header */
 
-.header {
-  background-color: var(--color-primary);
-  color: var(--color-text);
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 16px;
+  background-color: var(--color-primary);
 }
 
 .header-title {
   color: var(--color-on-primary);
   font-weight: 700;
   margin: 0;
+}
+
+.header-title-text {
+  color: var(--color-on-primary);
+  display: block;
+}
+
+.header-title-text-sm {
+  display: none;
 }
 
 .navbar {
@@ -124,6 +142,52 @@ main {
 
 /* End Header */
 
+/* Footer */
+
+footer {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.site-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 475px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.site-info h5 {
+  color: var(--color-on-primary);
+  margin: 4px 0;
+  text-align: center;
+}
+
+.theme-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  max-width: 475px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switcher p {
+  margin-right: 8px;
+}
+
+/* End Footer */
+
 /* Extra */
 
 button {
@@ -145,10 +209,25 @@ button:hover {
 .card {
   background-color: var(--color-light);
   border-radius: 0.5rem;
-  border: 2px solid var(--color-primary);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin: 16px;
+  border: 3px solid var(--color-primary);
   padding: 16px;
 }
 
+.max-content {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: var(--default-max-width);
+}
+
 /* End Extra */
+
+@media (max-width: 450px) {
+  .header-title-text {
+    display: none;
+  }
+
+  .header-title-text-sm {
+    color: var(--color-on-primary);
+    display: block;
+  }
+}

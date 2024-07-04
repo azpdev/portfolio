@@ -87,7 +87,7 @@ section {
 .print-me {
   display: flex;
   justify-content: center;
-  margin: 16px;
+  padding: 16px;
 }
 
 .skill-lists {

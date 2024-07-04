@@ -1,15 +1,12 @@
 @media print {
-  @page {
-    margin: 0 !important;
-  }
-
   /* General */
 
-  body {
-    padding: 30px !important;
-  }
+  /* body {
+    padding: 0 30px !important;
+  } */
 
-  header {
+  header,
+  .header {
     display: none !important;
   }
 
