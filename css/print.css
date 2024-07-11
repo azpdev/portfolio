@@ -1,7 +1,7 @@
 @media print {
   /* General */
 
-  body {
+  .background {
     background: none;
     background-color: none;
     background-image: none;
