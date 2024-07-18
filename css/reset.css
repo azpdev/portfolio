@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box;
   color: var(--color-text);
-  font-family: "MesloLGS NF", monospace, "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 100%;
   line-height: 1.2;
 }
@@ -56,43 +56,43 @@ a {
 }
 
 p {
-  font-size: 100%;
+  font-size: 110%;
   font-weight: 500;
 }
 
 h1 {
-  font-size: 200%;
+  font-size: 225%;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 160%;
+  font-size: 180%;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 135%;
+  font-size: 145%;
   font-weight: 700;
 }
 
 h4 {
-  font-size: 110%;
+  font-size: 120%;
   font-weight: 500;
 }
 
 /* Label */
 h5 {
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 400;
 }
 
 ul {
-  font-size: 100%;
+  font-size: 110%;
   padding-left: 18px;
 }
 
 li {
-  font-size: 100%;
+  font-size: 110%;
 }
 
 /* End Starter Global Styles */
@@ -241,6 +241,10 @@ button:hover {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: var(--default-max-width);
+}
+
+.buy-me-coffee {
+  text-decoration: underline;
 }
 
 /* End Extra */
