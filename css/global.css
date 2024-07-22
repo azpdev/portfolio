@@ -1,6 +1,6 @@
 @import url(theme.css);
 
-/* Starter Global Styles */
+/* Reset Styles */
 
 * {
   box-sizing: border-box;
@@ -12,14 +12,6 @@
 
 html {
   background-color: var(--color-background);
-}
-
-.background {
-  background-color: rgba(0, 0, 0, 0.3);
-  background-image: url(../assets/images/lg-keyboard.JPG);
-  background-blend-mode: darken;
-  background-repeat: repeat-y;
-  background-size: cover;
 }
 
 body,
@@ -95,7 +87,21 @@ li {
   font-size: 110%;
 }
 
-/* End Starter Global Styles */
+/* End of Reset Styles */
+
+/* Global Styles */
+
+/* Body styles */
+
+.background {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(../assets/images/lg-keyboard.JPG);
+  background-blend-mode: darken;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+/* End of Body */
 
 /* Header */
 
@@ -152,7 +158,7 @@ header {
   opacity: 0.5;
 }
 
-/* End Header */
+/* End of Header */
 
 /* Footer */
 
@@ -179,25 +185,6 @@ footer {
   margin: 4px 0;
   text-align: center;
 }
-
-.theme-section {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  max-width: 475px;
-  padding: 0 16px;
-  width: 100%;
-}
-
-.theme-switcher {
-  display: flex;
-  align-items: center;
-}
-
-.theme-switcher p {
-  margin-right: 8px;
-}
-
 /* End Footer */
 
 /* Primary Button */
@@ -235,6 +222,8 @@ button:hover {
 
 /* End of Card */
 
+/* End of Global */
+
 /* Extra */
 
 .max-content {
@@ -247,7 +236,7 @@ button:hover {
   text-decoration: underline;
 }
 
-/* End Extra */
+/* End of Extra */
 
 @media (max-width: 450px) {
   .header-title-text {
