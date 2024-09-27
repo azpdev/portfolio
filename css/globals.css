@@ -158,7 +158,8 @@ header {
   transition: 0.2s ease-in;
 }
 
-.navbar-list a:hover, .header-title span:hover {
+.navbar-list a:hover,
+.header-title span:hover {
   color: var(--color-on-primary);
   opacity: 0.5;
 }
@@ -186,10 +187,20 @@ footer {
 }
 
 .site-info h5 {
-  color: var(--color-on-primary);
   margin: 4px 0;
   text-align: center;
 }
+
+.email-link {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+.email-link:hover,
+.buy-me-coffee:hover {
+  text-decoration: none;
+}
+
 /* End Footer */
 
 /* Primary Button */
