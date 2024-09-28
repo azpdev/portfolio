@@ -1,12 +1,14 @@
-import { resolve } from "path";
-import { defineConfig } from "vite";
-import htmlMinifier from "vite-plugin-html-minifier";
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import htmlMinifier from 'vite-plugin-html-minifier';
 
 const build = {
   rollupOptions: {
     input: {
       main: resolve(__dirname, "index.html"),
-      resume: resolve(__dirname, "resume", "index.html"),
+      "about-me": resolve(__dirname, "about-me", "index.html"),
+      experience: resolve(__dirname, "experience", "index.html"),
+      projects: resolve(__dirname, "projects", "index.html"),
     },
   },
 };

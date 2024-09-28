@@ -1,3 +1,8 @@
+.card-container {
+  display: inline-block;
+  margin: 16px 0;
+}
+
 .contact-list ul {
   align-items: center;
   display: flex;
