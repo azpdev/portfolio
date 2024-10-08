@@ -1,6 +1,15 @@
 @media print {
   /* General */
 
+  * {
+    background-color: white;
+    color: black;
+  }
+
+  img {
+    filter: none !important;
+  }
+
   .background {
     background: none;
     background-color: none;

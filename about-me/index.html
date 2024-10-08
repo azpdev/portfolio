@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
     <!-- Site Meta -->
     <meta charset="utf-8" />
@@ -11,7 +11,7 @@
     <title>Alex Z. Palomin - About me</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="../assets/images/arm-bright-small.jpeg" />
+    <link rel="icon" href="/assets/images/arm-bright-small.jpeg" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,41 +21,97 @@
       rel="stylesheet" />
 
     <!-- Scripts and Styles -->
-    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="../css/print.css" />
+    <script type="module" src="/js/theme-switcher.js"></script>
+    <script type="module" src="/js/side-nav.js"></script>
   </head>
   <body>
     <header>
       <a href="/" class="header-title">
         <span class="title-text">Alex Z. Palomin</span>
-        <span class="title-text-sm">AZP</span>
+        <span class="title-text-sm">AZPDEV</span>
       </a>
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <a href="/experience/">
-            <li class="navbar-item">Experience</li>
-          </a>
-          <a href="/projects/">
-            <li class="navbar-item">Projects</li>
-          </a>
-          <a href="/about-me/">
-            <li class="navbar-item">About Me</li>
-          </a>
-          <!-- <li class="navbar-item">
-              <a href="#">Blog</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#">Consulting</a>
-            </li> -->
+      <nav class="nav-bar">
+        <ul class="nav-bar-list">
+          <li class="nav-bar-item"><a href="/experience">Experience</a></li>
+          <li class="nav-bar-item"><a href="/projects">Projects</a></li>
+          <li class="nav-bar-item">
+            <a href="/education">Education</a>
+          </li>
+          <li class="nav-bar-item"><a href="/about-me">About Me </a></li>
         </ul>
+        <button id="open-nav-btn" class="menu-btn">
+          <img
+            height="40"
+            width="40"
+            src="/assets/icons/menu.svg"
+            class="menu-icon" />
+        </button>
+        <div id="my-side-nav" class="side-nav">
+          <div class="side-top">
+            <button id="close-nav-btn" class="close-btn">&times;</button>
+            <ul class="side-nav-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/experience">Experience</a></li>
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/education">Education</a></li>
+              <li><a href="/about-me">About Me</a></li>
+            </ul>
+          </div>
+          <div class="f1"></div>
+          <div class="side-bottom">
+            <a href="mailto:alex@azpdev.com"
+              ><img
+                class="side-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-email-24.png"
+                alt="email icon"
+            /></a>
+            <a href="https://www.azpdev.com"
+              ><img
+                class="side-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-web-24.png"
+                alt="web icon."
+            /></a>
+            <a href="https://www.linkedin.com/in/azpdev"
+              ><img
+                class="side-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-linkedin-24.png"
+                alt="linkedin icon."
+            /></a>
+            <a href="https://github.com/azpdev"
+              ><img
+                class="side-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-github-24.png"
+                alt="github icon."
+            /></a>
+            <a href="https://leetcode.com/u/azpdev">
+              <img
+                class="side-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-leet-code-24.png"
+                alt="leet code icon." />
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
       <div class="max-content about-container">
         <h1 class="article-title">About Me</h1>
-        <p>More info than necessary, so enjoy. Pictures coming later.</p>
+        <h5>
+          <i>More info than necessary, so enjoy. Pictures coming later.</i>
+        </h5>
         <h2>Early Life</h2>
         <p>
           I was born and raised until almost 12 years old just outside of
@@ -75,6 +131,7 @@
           and board games. It was a very typical childhood in the early 2000s. I
           never really went into sports until I became an adult.
         </p>
+        <span class="divider"></span>
         <h2>Education</h2>
         <p>
           In school, I excelled in math and was not bad at language arts and
@@ -108,6 +165,7 @@
           position and my pay kept rising... I dropped out. Could have been a
           mistake. Only time will tell.
         </p>
+        <span class="divider"></span>
         <h2>Jobs</h2>
         <p>
           I worked a few months after I turned 14. Even before then, I tried to
@@ -130,6 +188,7 @@
           including working jobs, I don't like to make ends meet while I give
           this is an honest go.
         </p>
+        <span class="divider"></span>
         <h2>Hobbies</h2>
         <h3>Mountain Biking</h3>
         <p>
@@ -138,6 +197,9 @@
           time. However, it has taken a back burner spot while my interest in
           Jiu Jitsu is much greater.
         </p>
+        <div class="center">
+          <span class="divider-sm"></span>
+        </div>
         <h3>Jiu Jitsu</h3>
         <p>
           I did wrestling my senior year of high school and a partial year my
@@ -151,6 +213,9 @@
           I regularly compete and I win a decent number of my matches by
           submission.
         </p>
+        <div class="center">
+          <span class="divider-sm"></span>
+        </div>
         <h3>Lifting</h3>
         <p>
           I started lifting in high school and have picked it back up off and on
@@ -161,6 +226,9 @@
           plan. My current goal with it is to be fit for my main hobby of Jiu
           Jitsu.
         </p>
+        <div class="center">
+          <span class="divider-sm"></span>
+        </div>
         <h3>Philosophy, Religion, and Politics</h3>
         <p>
           I got into politics just after the 2016 US election. Religion has been
@@ -169,30 +237,41 @@
           interest after my philosophy teacher sparked that interest. I am in
           search of truths where I can find them.
         </p>
+        <div class="center">
+          <span class="divider-sm"></span>
+        </div>
         <h3>Stories</h3>
         <p>
           I love many types and medians of story telling. The few video games I
           have played that I enjoyed playing alone were story primary games. I
           also like reading sci-fi and fantasy. I also really like movies and
           shows and I am collecting physical copies of ones I like. I likely
-          will do the same with books.
+          will do the same with books. At one point I was doing a bit of fiction
+          writing in my free time, but haven't in a little while.
         </p>
+        <div class="center">
+          <span class="divider-sm"></span>
+        </div>
         <h3>Technology</h3>
         <p>
           I also really like technology whether it is new stuff coming out or
           computer building or little micro computers. I also keep my eye on
           technical advancements in other areas like energy.
         </p>
+        <div class="center">
+          <span class="divider-sm"></span>
+        </div>
         <h3>Gaming</h3>
         <p>
           Some people socially drink and I socially game. I have never been a
           huge video game player. My favorite game is <i>The Last of Us</i>, but
-          other than a few mostly I like to play games with friends or my
+          other than a few, mostly I like to play games with friends or my
           brother. Recently, I have been playing <i>Hell Diver 2</i> with my
           older brother.
         </p>
+        <span class="divider"></span>
         <h2>Goals</h2>
-        <p><i>In no particular order.</i></p>
+        <h5><i>In no particular order.</i></h5>
         <ul>
           <li>Work for myself full time</li>
           <li>
@@ -203,6 +282,9 @@
           <li>Buy a home</li>
           <li>Live on a farm</li>
         </ul>
+        <div class="center">
+          <span class="divider-sm"></span>
+        </div>
         <p>A few things I am doing to achieve those goals.</p>
         <ul>
           <li>Learning new skills</li>
@@ -218,40 +300,104 @@
       </div>
     </main>
 
+    <div class="f1"></div>
+
     <footer>
+      <section class="theme-section">
+        <div class="theme-switcher">
+          <p>Dark Mode:</p>
+          <label class="switch">
+            <input type="checkbox" id="switch" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </section>
       <section class="site-info">
-        <h5>Made in plain JS, HTML, and CSS by Alex Z. Palomin</h5>
-        <h5>Built with Vite to minify and GitHub Actions to automate.</h5>
         <h5>
-          If you want a similar site either steal it and
-          <a class="buy-me-coffee" href="https://www.buymeacoffee.com/azpdev"
-            >buy me a coffee</a
-          >
+          Made in plain JS, HTML, and CSS by Alex Z. Palomin. Built with Vite to
+          minify and GitHub Actions to automate. If you want a similar site
+          either steal it and
+          <a class="buy-me-coffee" href="https://www.buymeacoffee.com/azpdev">
+            buy me a coffee
+          </a>
           or contact
           <a href="mailto:sales@azpdev.com" class="email-link">
             sales@azpdev.com
           </a>
         </h5>
+        <div class="f1"></div>
         <h5 class="copy-right">© 2024 Alex Z. Palomin</h5>
+      </section>
+      <section class="contact-info">
+        <ul>
+          <li>
+            <a href="https://maps.app.goo.gl/56Chf9XNtym9WimC7">
+              <img
+                class="contact-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-location-24.png"
+                alt="location icon." />
+              West Jordan, Utah
+            </a>
+          </li>
+          <li>
+            <a href="mailto:alex@azpdev.com">
+              <img
+                class="contact-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-email-24.png"
+                alt="email icon." />
+              alex@azpdev.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.azpdev.com">
+              <img
+                class="contact-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-web-24.png"
+                alt="website icon." />
+              azpdev.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/azpdev">
+              <img
+                class="contact-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-linkedin-24.png"
+                alt="linkedin icon." />
+              in/azpdev.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/azpdev">
+              <img
+                class="contact-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-github-24.png"
+                alt="github icon." />
+              github/azpdev
+            </a>
+          </li>
+          <li>
+            <a href="https://leetcode.com/u/azpdev">
+              <img
+                class="contact-icon"
+                height="24"
+                width="24"
+                src="/assets/icons/icons8-leet-code-24.png"
+                alt="leet code icon." />
+              leetcode/azpdev
+            </a>
+          </li>
+        </ul>
       </section>
     </footer>
   </body>
 </html>
-
-<!-- <p>
-  My first software development position I got was the first employee of
-  a consulting firm and we were working in the basement apartment living
-  room of one of founding owners. I was working on my personal laptop
-  and a monitor and a kitchen room chair. We then moved to a room in the
-  back of a video game store that the other founding owner was starting
-  up. We finally got nicer chairs... After which we finally moved to a
-  legit office that was one big room, a back room, and a bathroom. Some
-  shared conference rooms and a shared bathroom with other office
-  suites. They got it hoping to expand. They had hired a few other devs
-  in this time and not all of them lasted.
-</p>
-<p>
-  I may have got really lucky with this position due to the direct
-  supervision and mentorship I had from the two owners. They entrusted a
-  lot of responsiblity to me and moved really quickly
-</p> -->
