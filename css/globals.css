@@ -338,7 +338,7 @@ button:hover {
 
 /* Side Nav */
 
-.side-nav {
+#side-nav {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -352,7 +352,7 @@ button:hover {
   transition: 0.5s;
 }
 
-.side-nav * {
+#side-nav * {
   color: var(--color-text);
   font-weight: bold;
 }
@@ -410,6 +410,15 @@ button:hover {
 
 .side-icon:hover {
   opacity: 0.8;
+}
+
+#side-nav-back {
+  background-color: black;
+  opacity: 0.2;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* End of Side Nav */
