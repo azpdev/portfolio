@@ -21,16 +21,32 @@
   --default-border-radius: 16px;
 }
 
-[data-theme="light"] {
+:root {
   --color-background: #cdc9c9;
   --color-text: #212529;
   --filter-text: brightness(0) saturate(100%) invert(8%) sepia(5%)
     saturate(2511%) hue-rotate(169deg) brightness(88%) contrast(84%);
 }
 
-[data-theme="dark"] {
+:root[data-theme="light"] {
+  --color-background: #cdc9c9;
+  --color-text: #212529;
+  --filter-text: brightness(0) saturate(100%) invert(8%) sepia(5%)
+    saturate(2511%) hue-rotate(169deg) brightness(88%) contrast(84%);
+}
+
+:root[data-theme="dark"] {
   --color-background: #212529;
   --color-text: #cdc9c9;
   --filter-text: brightness(0) saturate(100%) invert(74%) sepia(43%)
     saturate(15%) hue-rotate(314deg) brightness(106%) contrast(82%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #212529;
+    --color-text: #cdc9c9;
+    --filter-text: brightness(0) saturate(100%) invert(74%) sepia(43%)
+      saturate(15%) hue-rotate(314deg) brightness(106%) contrast(82%);
+  }
 }
