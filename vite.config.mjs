@@ -1,7 +1,7 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import htmlMinifier from "vite-plugin-html-minifier";
-import forwardToTrailingSlashPlugin from "./forward-to-trailing-slash-plugin.js";
+import forwardToTrailingSlashPlugin from "./vite-plugins/forward-to-trailing-slash-plugin.js";
 
 const build = {
   rollupOptions: {
