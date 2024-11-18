@@ -361,6 +361,10 @@ button:hover {
   opacity: 0.5;
 }
 
+.side-nav-top {
+  padding: 16px;
+}
+
 .menu-icon,
 .menu-btn {
   display: none;
@@ -368,10 +372,23 @@ button:hover {
   height: 0;
 }
 
+.home-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home-close span {
+  display: flex;
+  justify-content: end;
+  width: 60px;
+}
+
 .close-btn {
   width: min-content;
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .close-btn:hover {
@@ -385,10 +402,10 @@ button:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: min(15rem, 100vw);
 }
 
 .side-nav-menu li {
-  font-size: 1.5rem;
   padding: 0.5rem;
 }
 
@@ -400,7 +417,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 16px;
   border-top: 3px solid var(--color-primary);
 }
 
