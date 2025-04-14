@@ -6,7 +6,7 @@ export default [
       "prefer-const": "error",
       "no-constant-binary-expression": "error",
       "no-constant-condition": "error",
-      "capitalized-comments": "error",
+      "capitalized-comments": "off",
       "no-multi-spaces": "error",
       "no-multiple-empty-lines": "error",
       "no-trailing-spaces": "error",

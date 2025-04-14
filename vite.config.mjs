@@ -7,10 +7,10 @@ const build = {
   rollupOptions: {
     input: {
       main: resolve(__dirname, "index.html"),
-      "about-me": resolve(__dirname, "about-me", "index.html"),
-      education: resolve(__dirname, "education", "index.html"),
-      experience: resolve(__dirname, "experience", "index.html"),
-      projects: resolve(__dirname, "projects", "index.html"),
+      // about: resolve(__dirname, "about", "index.html"),
+      // employment: resolve(__dirname, "employment", "index.html"),
+      // projects: resolve(__dirname, "projects", "index.html"),
+      // contact: resolve(__dirname, "contact", "index.html"),
     },
   },
 };

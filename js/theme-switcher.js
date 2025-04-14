@@ -36,7 +36,7 @@ function themeToggleSetup() {
 }
 
 if (document.readyState === "loading") {
-  window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     themeToggleSetup();
   });
 } else {

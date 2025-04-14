@@ -24,96 +24,39 @@
       rel="stylesheet" />
 
     <!-- Scripts and Styles -->
-    <script type="module" src="/js/theme-switcher.js"></script>
     <link rel="stylesheet" href="/css/globals.css" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/css/print.css" />
-    <script type="module" src="/js/side-nav.js"></script>
+    <script type="module" src="/js/theme-switcher.js"></script>
+    <script type="module" src="home.js"></script>
   </head>
   <body>
-    <header>
-      <a href="/" class="header-title">
-        <span class="title-text">Alex Z. Palomin</span>
-        <span class="title-text-sm">AZPDEV</span>
-      </a>
-      <nav class="nav-bar">
-        <ul class="nav-bar-list">
-          <li class="nav-bar-item"><a href="/experience">Experience</a></li>
-          <li class="nav-bar-item"><a href="/projects">Projects</a></li>
-          <li class="nav-bar-item">
-            <a href="/education">Education</a>
+    <div id="resume-container">
+      <!-- <nav id="side-nav">
+        <h1>Alex Z. Palomin</h1>
+        <ul class="f1">
+          <li>
+            <a href="/">Resume</a>
           </li>
-          <li class="nav-bar-item"><a href="/about-me">About Me </a></li>
+          <li>
+            <a href=""> Experience </a>
+          </li>
+          <li>Education</li>
+          <li>About Me</li>
+          <li>Projects</li>
         </ul>
-        <button id="open-nav-btn" class="menu-btn">
-          <img height="40" width="40" src="/assets/icons/menu.svg" class="menu-icon" />
-        </button>
-        <div id="side-nav">
-          <div class="side-top">
-            <ul class="side-nav-menu">
-              <span class="home-close">
-                <span></span>
-                <li><a href="/">Home</a></li>
-                <span>
-                  <button id="close-nav-btn" class="close-btn">&times;</button>
-                </span>
-              </span>
-              <li><a href="/experience">Experience</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/education">Education</a></li>
-              <li><a href="/about-me">About Me</a></li>
-            </ul>
-          </div>
-          <div class="f1"></div>
-          <div class="side-bottom">
-            <a href="mailto:alex@azpdev.com">
-              <img
-                class="side-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-email-24.png"
-                alt="email icon" />
-            </a>
-            <a href="https://www.azpdev.com">
-              <img
-                class="side-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-web-24.png"
-                alt="web icon." />
-            </a>
-            <a href="https://www.linkedin.com/in/azpdev">
-              <img
-                class="side-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-linkedin-24.png"
-                alt="linkedin icon." />
-            </a>
-            <a href="https://github.com/azpdev">
-              <img
-                class="side-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-github-24.png"
-                alt="github icon." />
-            </a>
-            <a href="https://leetcode.com/u/azpdev">
-              <img
-                class="side-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-leet-code-24.png"
-                alt="leet code icon." />
-            </a>
-          </div>
+        <div class="theme-switcher">
+          <p>Dark Mode:</p>
+          <label class="switch">
+            <input type="checkbox" id="switch" />
+            <span class="slider round"></span>
+          </label>
         </div>
-        <div id="side-nav-back"></div>
       </nav>
-    </header>
 
-    <main class="background">
-      <div class="max-content">
+      <div id="side-nav-spacer"></div> -->
+
+      <main id="resume-main">
         <div class="card-container">
           <div class="card">
             <div class="resume-header">
@@ -166,8 +109,8 @@
                 <ul class="section-content">
                   <li>Front-end</li>
                   <li>Back-end</li>
-                  <li>IOS</li>
                   <li>Android</li>
+                  <li>IOS</li>
                   <li>Web</li>
                 </ul>
                 <ul class="section-content">
@@ -203,9 +146,9 @@
               </ul>
               <div class="exp-header">
                 <h3 class="exp-title">Software Developer</h3>
-                <h5 class="exp-sub-title">November 2024 - Current</h5>
+                <h5 class="exp-sub-title">November 2024 - March 2025</h5>
               </div>
-              <h4 class="exp-sub-heading">Dancing Dragons CC, Remote</h4>
+              <h4 class="exp-sub-heading">Dancing Dragons CC, Remote/Contract</h4>
               <ul class="section-content">
                 <li>NextJs, PostgreSql, Vercel, Neon, ClerkJs, Drizzle</li>
                 <li>Helped get the initial application up and running</li>
@@ -217,7 +160,7 @@
                 <h3 class="exp-title">Lead Software Developer</h3>
                 <h5 class="exp-sub-title">Sept 2023 - July 2024</h5>
               </div>
-              <h4 class="exp-sub-heading">Stutor Inc, Utah</h4>
+              <h4 class="exp-sub-heading">Stutor Inc, Remote/Utah</h4>
               <ul class="section-content">
                 <li>Dart, Flutter, Firebase, Bloc, RiverPod, Android, IOS, Web</li>
                 <li>Managed a front-end team of developers</li>
@@ -226,12 +169,12 @@
                 <li>Implemented Twilio messaging in Swift and Kotlin</li>
                 <li>Interfaced with founders and backend team to deliver features</li>
               </ul>
-              <span class="print-page-break"></span>
+              <div class="print-page-break"></div>
               <div class="exp-header">
                 <h3 class="exp-title">Software Developer</h3>
                 <h5 class="exp-sub-title">Oct 2021 - Sept 2023</h5>
               </div>
-              <h4 class="exp-sub-heading">Jerran Software Solutions, Utah</h4>
+              <h4 class="exp-sub-heading">Jerran Software Solutions, Hybrid/Utah</h4>
               <ul class="section-content">
                 <li>Javascript, Typescript, Dart, Angular, Ionic, Flutter, Android, IOS, Web</li>
                 <li>Led a major redesign of the app</li>
@@ -263,127 +206,18 @@
             </section>
 
             <!-- <section>
-            <h2 class="sub-heading">Certifications</h2>
-          </section> -->
+          <h2 class="sub-heading">Certifications</h2>
+        </section> -->
 
             <!-- <section>
-            <h2>Projects</h2>
-          </section> -->
+          <h2>Projects</h2>
+        </section> -->
           </div>
         </div>
-      </div>
-
-      <div class="print-me">
-        <button onclick="window.print()">Print Me</button>
-      </div>
-    </main>
-
-    <div class="f1"></div>
-
-    <footer>
-      <section class="theme-section">
-        <div class="theme-switcher">
-          <p>Dark Mode:</p>
-          <label class="switch">
-            <input type="checkbox" id="switch" />
-            <span class="slider round"></span>
-          </label>
+        <div class="print-me">
+          <button onclick="window.print()">Print Me</button>
         </div>
-      </section>
-      <section class="site-info">
-        <h5>
-          Made with plain JS, HTML, and CSS by Alex Z. Palomin. Built with Vite to minify and GitHub
-          Actions to automate. If you want a similar site, either steal it and
-          <a class="buy-me-coffee" href="https://www.buymeacoffee.com/azpdev"> buy me a coffee </a>
-          or contact
-          <a href="mailto:consulting@refactortechnologies.com" class="email-link">
-            consulting@refactortechnologies.com
-          </a>
-        </h5>
-        <div class="f1"></div>
-        <h5 class="copy-right">© 2024 Alex Z. Palomin</h5>
-      </section>
-      <section class="contact-info">
-        <ul>
-          <li>
-            <a href="https://maps.app.goo.gl/56Chf9XNtym9WimC7">
-              <img
-                class="contact-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-location-24.png"
-                alt="location icon." />
-              West Jordan, Utah
-            </a>
-          </li>
-          <li>
-            <a href="mailto:alex@azpdev.com">
-              <img
-                class="contact-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-email-24.png"
-                alt="email icon." />
-              alex@azpdev.com
-            </a>
-          </li>
-          <li>
-            <a href="https://www.azpdev.com">
-              <img
-                class="contact-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-web-24.png"
-                alt="website icon." />
-              azpdev.com
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/azpdev">
-              <img
-                class="contact-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-linkedin-24.png"
-                alt="linkedin icon." />
-              in/azpdev.com
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/azpdev">
-              <img
-                class="contact-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-twitter-24.png"
-                alt="twitter icon." />
-              x/azpdev
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/azpdev">
-              <img
-                class="contact-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-github-24.png"
-                alt="github icon." />
-              github/azpdev
-            </a>
-          </li>
-          <li>
-            <a href="https://leetcode.com/u/azpdev">
-              <img
-                class="contact-icon"
-                height="24"
-                width="24"
-                src="/assets/icons/icons8-leet-code-24.png"
-                alt="leet code icon." />
-              leetcode/azpdev
-            </a>
-          </li>
-        </ul>
-      </section>
-    </footer>
+      </main>
+    </div>
   </body>
 </html>

@@ -72,10 +72,18 @@
   }
 
   .print-page-break {
-    display: block !important;
     page-break-before: always !important;
-    padding-bottom: 16px;
+    break-before: always !important;
+    margin-top: 16px !important;
   }
 
   /* End of Extra */
+
+  #side-nav,
+  #side-nav-spacer,
+  #circle {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
 }
