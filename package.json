@@ -8,15 +8,34 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "pnpx prettier -w .",
+    "format:check": "pnpx prettier --check .",
     "lint": "eslint --fix .",
+    "lint:check": "eslint .",
     "prepare": "husky"
   },
   "devDependencies": {
-    "eslint": "^9.17.0",
+    "@eslint/js": "^9.26.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-regexp": "^2.7.0",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "globals": "^16.0.0",
     "husky": "^9.1.7",
-    "prettier": "^3.4.2",
+    "lint-staged": "^15.4.0",
+    "prettier": "^3.5.3",
     "vite": "^6.0.6",
     "vite-plugin-html-minifier": "^1.0.5",
     "vite-plugin-inline-source": "^4.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,mjs,cjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{html,css,json,md}": [
+      "prettier --write"
+    ]
   }
 }
